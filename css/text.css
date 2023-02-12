@@ -1,0 +1,308 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	color: white;
+	font-family: Arial;
+	margin-top: -70px;
+}
+
+h1 {
+	margin-left: 85px;
+	font-size: 60px;
+	text-shadow: 2px 2px 10px #000000;
+	color: white;
+}
+
+a {
+	text-decoration: none;
+	color: grey;
+}
+
+hr {
+	background-color: #C6B995;
+	border: solid #C6B995 2px;
+	border-radius: 10px;
+}
+
+/* encabezado */
+
+header {
+	backdrop-filter: blur( 19px );
+	box-shadow: 2px 2px 80px #303030;
+	z-index: 999999999999999;
+	position: fixed;
+	margin-top: 70px;
+	width: 100%;
+	height: 70px;
+	background: rgba(198, 185, 149, 0.8);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+header .lados {
+	width: 50%;
+	display: flex;
+	align-items: center;
+}
+
+#logo_zubiri {
+	margin-left: 20px;
+	width: 120px;
+}
+
+#buscador {
+	outline: none;
+	margin-left: 30px;
+	width: 45%;
+	height: 39px;
+	color: white;
+	font-size: 18px;
+	border-radius: 10px 0px 0px 10px;
+	border: none;
+	background: rgba(0, 0, 0, 0.2);
+	padding-left: 10px;
+}
+
+#buscador:hover {
+	padding-left: 5px;
+	border: solid rgba(0, 0, 0, 0.1);
+	border-width: 5px 0px 5px 5px;
+}
+
+::placeholder {
+	opacity: 0.7;
+  	color: white;
+  	font-size: 18px;
+}
+
+#lupa {
+	border-radius: 0px 10px 10px 0px;
+	background: rgba(0, 0, 0, 0.3);
+	width: 29px;
+	height: 27px;
+	display: flex;
+	padding: 6px;
+	justify-content: center;
+	cursor: pointer;
+}
+
+#header_botones {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+.boton {
+	font-size: 20px;
+	display: flex;
+	align-items: center;
+	margin-right: 20px;
+	color: white;
+	font-weight: bold;
+}
+
+.boton:hover {
+	color: grey;
+}
+
+/* encabezado */
+
+
+
+
+
+/* titulo con fondo */
+
+#titulo { /* "titulo" engloba hasta "cursal_imagen2" */
+	width: 100%;
+	height: 300px;
+}
+
+#titulo_cursal {
+	user-select: none;
+	width: 100%;
+	height: 100%;
+}
+
+#titulo_caja { /* "titulo_caja" engloba hasta "cursal_imagen2" */
+	top: 120px;
+	position: absolute;
+	width: 100%;
+	z-index: 99999999;
+}
+
+#titulo_caja_texto { /* "titulo_caja" engloba hasta "cursal_imagen2" */
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+}
+
+.titulo_caja_texto_lado1 {
+	width: 70%;
+}
+
+.titulo_caja_texto_lado2 {
+	display: flex;
+	justify-content: center;
+	width: 30%;
+}
+
+.titulo_boton {
+	background-color: #595959ff;
+	color: white;
+	border: 5px solid #3a3a3aff;
+	padding: 10px;
+	margin-right: 25px;
+	text-align: center;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.titulo_boton:hover {
+	cursor: pointer;
+	background-color: #6F6F6F;
+	border: 5px solid #4F4F4F;
+}
+
+#cursal_imagen1 {
+	user-select: none;
+	position: absolute;
+	top: 140px;
+	left: 1%;
+	margin-left: 20px;
+	width: 130px;
+}
+
+#cursal_imagen2 {
+	user-select: none;
+	position: absolute;
+	top: 163px;
+	left: 1.5%;
+	margin-left: 160px;
+	width: 100px;
+	z-index: 999999999;
+}
+
+/* "caja" engloba hasta "cursal_imagen2" */
+/* "titulo" engloba hasta "cursal_imagen2" */
+/* titulo con fondo */
+
+
+
+/* zona media con información */
+#medio {
+	/* background: linear-gradient(68deg, rgba(240,179,179,1) 0%, rgba(210,207,245,1) 14%, rgba(251,211,211,1) 53%, rgba(233,221,221,1) 80%, rgba(212,231,247,1) 100%); 
+	border: solid white;
+	color: #444444; */
+	background: linear-gradient(68deg, rgba(42,32,32,1) 0%, rgba(40,39,51,1) 14%, rgba(65,48,48,1) 53%, rgba(38,38,38,1) 80%, rgba(37,44,51,1) 100%);
+	border: solid #202020;
+	border-width: 20px 0px 0px 0px;
+	width: 100%;
+	background-color: #3E3E3E; 
+}
+
+.medio_texto {
+	padding: 30px;
+}
+
+#row {
+	display: flex;
+	flex-direction: row;
+}
+
+aside {
+	border-radius: 10px;
+	margin: 20px;
+	width: 20%;
+	background-color: rgb(93,93,93,0.2);
+	/*background-color: #5D5D5D; */
+}
+
+#derecha {
+	width: 80%;
+	margin: 20px;
+}
+
+.derecha_1 {
+	background-color: red;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	/*background-color: #5D5D5D;*/
+}
+	
+#area_alumnos {
+	background-color: blue;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 500px;
+}
+
+#area_alumnos_1 {
+	background-color: red;
+	/*background-color: rgb(93,93,93,0.2); */
+	/*background-color: #505050;*/
+	margin: 30px 15px 30px 30px;
+	border-radius: 10px;
+	width: 30%;
+}
+
+#area_alumnos_2 {
+	background-color: rgb(93,93,93,0.2);
+	/*background-color: #505050;*/
+	margin: 30px 30px 30px 15px;
+	border-radius: 10px;
+	width: 70%;
+}
+
+.medio_titulo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 30px;
+	color: white;
+	border-radius: 10px 10px 0px 0px;
+	height: 50px;
+	background-color: #202020;
+}
+
+#paginas {
+	border-radius: 10px;
+	background-color: red;
+	margin: 40px;
+	width: 100%;
+}
+
+/* zona media con información */
+
+
+
+
+/* footer */
+footer {
+	border: solid #252525;
+	border-width: 5px 0px 0px 0px;
+	width: 100%;
+	background-color: #323232;
+	display: flex;
+	flex-direction: row;
+	height: 110px;
+}
+
+footer .lados {
+	padding: 10px;
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/* footer */
